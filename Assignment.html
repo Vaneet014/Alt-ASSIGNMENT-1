@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('https://www.altudo.co/-/media/project/altudo/altudo/hero-carousel/01-altudo-home-page-hero-banner-(1).jpg?h=1080&iar=0&w=1920&hash=BF24295A7C0B7E370CFF46514290FEC4');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        header {
+            background-color: #ffea00;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        .logo span {
+            font-size: 24px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+            font-size: 16px;
+            flex: 1;
+        }
+
+        .search-bar button {
+            padding: 10px;
+            border: 1px solid #007bff;
+            background-color: #007bff;
+            color: white;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+
+        main {
+            flex: 1;
+            padding: 2em;
+        }
+        form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #ffffe0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+form div {
+    margin-bottom: 1.5em; 
+}
+
+form label {
+    margin-bottom: .5em;
+    color: #333;
+    display: block;
+    font-weight: bold; 
+}
+
+form input, form textarea {
+    border: 1px solid #ddd;
+    padding: 0.75em; 
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px; 
+    transition: border-color 0.3s ease; 
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007bff; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+form textarea {
+    resize: vertical; 
+}
+
+form button {
+    padding: 0.7em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin: 1em auto 0;
+    transition: background-color 0.3s ease; 
+}
+
+form button:hover {
+    background-color: #0056b3; 
+}
+
+form button:active {
+    background-color: #004085; 
+}
+
+
+        footer {
+            background-color: #ffea00;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://www.altudo.co/-/media/project/altudo/altudo/header/altudo-logo_white-(2).svg?iar=0&hash=8A45B916B9AC8B18161C6A6637A6FF18" alt="Website Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div>
+                <label for="designation">Designation:</label>
+                <input type="text" id="designation" name="designation">
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+    <footer>
+        <p> Footer for the website</p>
+    </footer>
+</body>
+</html>
